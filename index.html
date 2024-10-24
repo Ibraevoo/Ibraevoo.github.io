@@ -6,25 +6,27 @@
     <style>  
         body {
             background-image: url('https://killtec.dev/img/study-chill-coding-big.gif');
-            background-size: cover; /* Ensure the background covers the entire viewport */
-            background-position: center; /* Center the background */
-            background-repeat: no-repeat; /* Avoid tiling */
-            background-attachment: scroll; /* Change this to 'fixed' for parallax effect */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
             margin: 0;
             width: 100%;
-            min-height: 100vh; /* Ensure it covers full height */
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* Align content to the top */
+            justify-content: flex-start;
             align-items: center;
             text-align: center;
+            background-color: #fff9c4;
             color: white;
         }
         img {
-            max-width: 100%; /* Ensure image is responsive */
+            width: 80%; /* Default image width */
+            max-width: 800px; /* Maximum width for large screens */
             height: auto; /* Maintain aspect ratio */
             margin-bottom: 20px;
-            object-fit: cover; /* Proper scaling of the image */
+            object-fit: cover;
         }
         h1 {
             font-size: 50px;
@@ -59,7 +61,7 @@
         /* Mobile and smaller screens */
         @media only screen and (max-width: 768px) {
             body {
-                min-height: auto; /* Adjust height for mobile */
+                min-height: auto;
                 padding: 10px;
             }
             h1 {
@@ -67,6 +69,10 @@
             }
             p {
                 font-size: 16px;
+            }
+            img {
+                width: 90%; /* Larger image on mobile */
+                max-width: 100%; /* Allow full width if needed */
             }
             .social-links a {
                 font-size: 16px;
@@ -79,7 +85,7 @@
                 font-size: 28px;
             }
             img {
-                width: 100%; /* Full width image for very small screens */
+                width: 100%; /* Full width image on smaller screens */
             }
             p {
                 font-size: 14px;
