@@ -6,10 +6,10 @@
     <style>  
         body {
             background-image: url('https://killtec.dev/img/study-chill-coding-big.gif');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: scroll;
+            background-size: cover; /* Ensures the background covers the entire viewport */
+            background-position: center; /* Center the background */
+            background-repeat: no-repeat; /* Avoid repeating the image */
+            background-attachment: fixed; /* Fixes the background to prevent scrolling */
             margin: 0;
             width: 100%;
             min-height: 100vh;
@@ -18,7 +18,6 @@
             justify-content: flex-start;
             align-items: center;
             text-align: center;
-            background-color: #fff9c4;
             color: white;
         }
         img {
@@ -61,7 +60,6 @@
         /* Mobile and smaller screens */
         @media only screen and (max-width: 768px) {
             body {
-                min-height: auto;
                 padding: 10px;
             }
             h1 {
