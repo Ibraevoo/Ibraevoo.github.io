@@ -6,9 +6,13 @@
     <style>  
         body {
             background-image: url('https://killtec.dev/img/study-chill-coding-big.gif');
+            background-size: cover; /* Ensure the background covers the entire viewport */
+            background-position: center; /* Center the background */
+            background-repeat: no-repeat; /* Avoid tiling */
+            background-attachment: scroll; /* Change this to 'fixed' for parallax effect */
             margin: 0;
             width: 100%;
-            min-height: 100vh; /* Use 100vh to fit full height */
+            min-height: 100vh; /* Ensure it covers full height */
             display: flex;
             flex-direction: column;
             justify-content: flex-start; /* Align content to the top */
@@ -21,16 +25,16 @@
             max-width: 100%; /* Ensure image is responsive */
             height: auto; /* Maintain aspect ratio */
             margin-bottom: 20px;
-            object-fit: cover; /* Ensures proper scaling of the image */
+            object-fit: cover; /* Proper scaling of the image */
         }
         h1 {
             font-size: 50px;
             color: white;
-            margin: 20px 0; /* Add margin for spacing */
+            margin: 20px 0;
         }
         p {
             font-size: 18px;
-            padding: 0 10px; /* Add padding to prevent text from being cut off */
+            padding: 0 10px;
             margin: 10px 0;
         }
         .social-links {
@@ -56,8 +60,8 @@
         /* Mobile and smaller screens */
         @media only screen and (max-width: 768px) {
             body {
-                min-height: auto;
-                padding: 10px; /* Add padding to prevent overflow */
+                min-height: auto; /* Adjust height for mobile */
+                padding: 10px;
             }
             h1 {
                 font-size: 36px;
